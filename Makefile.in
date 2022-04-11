@@ -45,32 +45,32 @@
 # is double scalb(double, double)
 #
 
-prefix	= /usr/local
+prefix	= @prefix@
 
-AR	= ar
+AR	= @AR@
 
-CC	= gcc
+CC	= @CC@
 
 #
 # Default IEEE libm
 #
-CFLAGS	= -g -O2 -D_IEEE_LIBM
+CFLAGS	= @CFLAGS@ -D_IEEE_LIBM
 
-CHMOD	= chmod
+CHMOD	= @CHMOD@
 
-CP	= cp
+CP	= @CP@
 
 INCFILES = fdlibm.h
 
-LDFLAGS	= 
+LDFLAGS	= @LDFLAGS@
 
 LIB	= libfdm.a
 
-LIBS	= 
+LIBS	= @LIBS@
 
-RANLIB	= ranlib
+RANLIB	= @RANLIB@
 
-RM	= /bin/rm -f
+RM	= @RM@ -f
 
 .INIT: $(INCFILES)
 
