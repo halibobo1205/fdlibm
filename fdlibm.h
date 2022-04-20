@@ -15,7 +15,8 @@
 
 #if defined(i386) || defined(i486) || \
 	defined(intel) || defined(x86) || defined(i86pc) || \
-	defined(__alpha) || defined(__osf__)
+	defined(__alpha) || defined(__osf__) ||defined(__x86_64__) || \
+    defined(arm) || defined(__arm__) || defined(__aarch64__) || defined(__arm64__)
 #define __LITTLE_ENDIAN
 #endif
 
